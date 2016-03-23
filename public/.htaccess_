@@ -1,0 +1,52 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+    
+    #RewriteCond %{HTTP_HOST} !^www\.
+    #RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L,NC]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+    
+    # 301 Redirects
+    Redirect 301 /high-end-business-cards   http://www.rockdesign.com/premium-business-cards
+    Redirect 301 /style-business-cards      http://www.rockdesign.com/classic-business-cards
+    
+    Redirect 301 /2-Sided-SPOT-UV-Business-Cards    http://www.rockdesign.com/classic-business-cards/2-sided-spot-uv-business-cards
+    Redirect 301 /32pt-Silk-Business-Card           http://www.rockdesign.com/premium-business-cards/32pt-silk-business-cards
+    Redirect 301 /Black-Business-Cards              http://www.rockdesign.com/premium-business-cards/black-business-cards
+    Redirect 301 /Black-Metal-Cards                 http://www.rockdesign.com/metal-business-cards/black-metal-business-cards
+    Redirect 301 /Brass-Metal-Cards                 http://www.rockdesign.com/metal-business-cards/gold-metal-business-cards
+    Redirect 301 /Brown-Kraft-Business-Cards        http://www.rockdesign.com/premium-business-cards/brown-kraft-business-cards
+    Redirect 301 /business-card-design              http://www.rockdesign.com/design-services/business-card-design-services
+    Redirect 301 /Clear-Business-Cards              http://www.rockdesign.com/plastic-business-cards/clear-business-cards
+    Redirect 301 /Duplex-Business-Cards             http://www.rockdesign.com/premium-business-cards/black-business-cards
+    Redirect 301 /Frost-Business-Cards              http://www.rockdesign.com/plastic-business-cards/frost-business-cards
+    Redirect 301 /Frost-PVC-Business-Cards          http://www.rockdesign.com/plastic-business-cards/frost-pvc-business-cards
+    Redirect 301 /Gray-Business-Cards               http://www.rockdesign.com/premium-business-cards/gray-business-cards
+    Redirect 301 /Hard-Suede-Business-Cards         http://www.rockdesign.com/luxury-business-cards/hard-suede-business-cards
+    Redirect 301 /Laser-Engraved-Black-Business-Card    http://www.rockdesign.com/quick-business-cards/laser-engraved-black-business-cards
+    Redirect 301 /Laser-Engraved-Black-Metal-Card       http://www.rockdesign.com/quick-business-cards/laser-engraved-black-metal-business-cards
+    Redirect 301 /Letterpress-Business-Cards            http://www.rockdesign.com/premium-business-cards/letterpress-business-cards
+    Redirect 301 /Luxury-Black-Metal-Cards              http://www.rockdesign.com/metal-business-cards/luxury-black-metal-business-cards
+    Redirect 301 /Natural-Cream-Uncoated-Business-Cards http://www.rockdesign.com/classic-business-cards/natural-cream-uncoated-business-cards
+    Redirect 301 /Premium-White-Uncoated-Business-Cards http://www.rockdesign.com/premium-business-cards/premium-uncoated-business-cards
+    Redirect 301 /Regular-Suede-Business-Cards          http://www.rockdesign.com/classic-business-cards/regular-suede-business-cards
+    Redirect 301 /Smooth-White-Uncoated-Business-Cards  http://www.rockdesign.com/premium-business-cards/smooth-uncoated-business-cards
+    Redirect 301 /Soft-Suede-Business-Cards             http://www.rockdesign.com/luxury-business-cards/soft-suede-business-cards
+    Redirect 301 /Stainless-Steel-Cards                 http://www.rockdesign.com/metal-business-cards/stainless-steel-business-cards
+    
+    Redirect 301 /download-templates        http://www.rockdesign.com/business-card-templates
+    Redirect 301 /free-design-templates     http://www.rockdesign.com/business-card-templates
+    
+    Redirect 301 /special-printing          http://www.rockdesign.com/corporate-orders
+</IfModule>

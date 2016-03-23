@@ -1,0 +1,63 @@
+.clear {clear: both;}
+.cursor-pointer {cursor: pointer;}
+.text-right {text-align: right;}
+
+a span.lg-but {display:block;}
+.small-inv-img-wrap1 {background-size:100% 100% !important;}
+.checkout-page .top-block li.allow {cursor: pointer;}
+.checkout-page .chekout-but {border: none;}
+.has-error .help-block,
+.errmsg {color: #ff3155;}
+
+.sign-bl-wrap .log-res-pass {display:block;}
+.top_menu .menu .sub-menu-col:first-child {height:auto; min-height:245px;}
+/*.templ-detail .det-ord-cont select {padding-top:5px; padding-bottom:4px;}*/
+.temp-info-wrap {height:50px; margin-top:15px;}
+.templ-detail .det-ord-cont select.product-option { width: 91%; }
+.options-box .option-item-box {float: left; width: 50%;}
+.select-warning {
+    color: #ff3155;
+    font-family: "GothamMedium",sans-serif;
+    font-size: 14px;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+/*.card-item-info-wrap {
+    position: inherit;
+    padding-left: 0;
+    margin-left: 285px;
+}*/
+
+.pswp__caption__center {
+    color: #898989;
+    letter-spacing: 0.5px;
+    max-width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+}
+.pswp__caption__center a span {margin-right:0 !important;}
+
+.ld-item-info-wrap img {position: inherit; float: left;}
+.ld-item-info-wrap > div {display: block; float: right; width: 255px; padding: 0;}
+.ship-option-row .left-bl input {margin-left:2px;}
+.product-thumbnail {max-width:510px; max-height:340px;}
+.delivery-benef-wrap .fedex-charge {
+    color: #006d9c !important;
+    font-family: "Gotham SSm A","Gotham SSm B";
+    font-style: normal;
+    font-weight: 500;
+}
+.ordered-row {border-top: 1px solid #dedfe0;}
+.order-information-total {width: 290px;}
+.order-information-total .sub-total-row td {padding: 8px 0 5px}
+.order-information-total .total-row {border-top: 1px solid #dedfe0;}
+
+/*temp*/
+#custom-notification {
+    padding:10px;
+    background-color: #0f2c3b;
+    color: white;
+    text-align:center;
+    font-size: 12px;
+}
